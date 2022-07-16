@@ -25,77 +25,71 @@
 // Very doubtful.
 
 //question("")
+
+const qtyForm = document.querySelector('#questionForm');
+const qtyInput = document.querySelector('#question');
+const qtyOutput = document.querySelector('#eightBallOutput');
+
+qtyForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    qtyOutput.style.fontSize = '1em';
+    const newPrediction = qtyInput.value;
+    let newAnswer = question(newPrediction)
+    qtyOutput.innerText = newAnswer
+
+});
+
+
 function question(question) {
     if (typeof question !== 'string'){console.log("please make sure you're using a string");return}
     console.log(`your question was... ${question}... the ball says...`);
 let Prediction = Math.floor(Math.random() * 20) + 1;
 switch(Prediction) {
     case 1:
-        console.log("It is certain.")
-        break;
+        return("It is certain.");
     case 2:
-        console.log("It is decidedly so.")
-        break;
+        return("It is decidedly so.");
     case 3:
-        console.log("Without a doubt.")
-        break;
+        return("Without a doubt.");
     case 4:
-        console.log("Yes definitely.")
-        break;
+        return("Yes definitely.");
     case 5:
-        console.log("You may rely on it.")
-        break;
+        return("You may rely on it.");
     case 6:
-        console.log("As I see it, yes.")
-        break;
+        return("As I see it, yes.");
     case 6:
-        console.log("Most likely.")
-        break;
+        return("Most likely.");
     case 7:
-        console.log("Outlook good.")
-        break;
+        return("Outlook good.");
     case 8:
-        console.log("Yes.")
-        break;
+        return("Yes.");
     case 9:
-        console.log("Signs point to yes.")
-        break;
+        return("Signs point to yes.");
     case 10:
-        console.log("Reply hazy, try again.")
-        break;
+        return("Reply hazy, try again.");
     case 11:
-        console.log("Ask again later.")
-        break;
+        return("Ask again later.");
     case 12:
-        console.log("Better not tell you now.")
-        break;
+        return("Better not tell you now.");
     case 13:
-        console.log("Cannot predict now.")
-        break;
+        return("Cannot predict now.");
     case 14:
-        console.log("Concentrate and ask again.")
-        break;
+        return("Concentrate and ask again.");
     case 15:
-        console.log("Don't count on it.")
-        break;
+        return("Don't count on it.");
     case 16:
-        console.log("My reply is no.")
-        break;
+        return("My reply is no.");
     case 17:
-        console.log("error try again")
-        break;
+        return("error try again");
     case 18:
-        console.log("My sources say no.")
-        break;
+        return("My sources say no.");
     case 19:
-        console.log("Outlook not so good.")
-        break;
+        return("Outlook not so good.");
     case 20:
-        console.log("Very doubtful.")
-        break;
+        return("Very doubtful.");
 
         default:
-            console.log("how did you even trigger this?")
+            return("how did you even trigger this?")
 }
 }
 
