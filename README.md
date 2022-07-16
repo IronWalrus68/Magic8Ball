@@ -1,15 +1,11 @@
 # Magic8Ball
 
-This is just an app i made when i was bored.
+This is just an app i made when i was bored. It started like as a simple switch statment that ran in the command line, now it's a full web app!
 
 ## to use:
 ___
-> open html page
+> click the text input and type your question
 
-> open command line
+> Click the "Ask Your Question" button.
 
-> use question(' ') to ask a queston
-
-```
-question('Will i have good fortune?')
-```
+> Be amazed at your prediction.
