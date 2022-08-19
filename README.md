@@ -9,3 +9,5 @@ ___
 > Click the "Ask Your Question" button.
 
 > Be amazed at your prediction.
+
+https://ironwalrus68.github.io/Magic8Ball/
